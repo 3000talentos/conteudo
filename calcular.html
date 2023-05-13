@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var valor1 = prompt("Digite o valor")
+        var valor1 = valor1.replace(",",".")
+        var porcentagem = prompt("Digite a porcentagem")
+        var porcentagem = porcentagem.replace(",",".")
+        var porcet = porcentagem / 100
+        var calc = valor1 * porcet
+        var resultado = (valor1 + calc)*/
+        var nota1 = "7,1"
+        var nota2 = "7,2"
+        var nota3 = "7,3"
+        var nota1 = nota1.replace(",",".")
+        var nota2 = nota2.replace(",",".")
+        var nota3 = nota3.replace(",",".")
+        var media = sun(nota1 + nota2)
+        var resultado = media
+        
+    </script>
+</head>
+<body>
+    <h2 id="mostrar" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"></h2>
+<script>
+document.getElementById("mostrar").innerHTML = resultado
+</script>
+</body>
+</html>

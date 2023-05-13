@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Radio JS</title>
+</head>
+
+<body>
+    <h2>Formulário em HTML e JS</h2>
+
+    <form>
+        <!-- Formulário tipo radio -->
+        <input type="radio" id="texto" name="texto" value="F">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="texto" name="texto" value="M">
+        <label for="masculino">Masculino</label><br><br>
+
+        <!-- Botão enviar -->
+        <button type="button" onclick="myFunction()">Submit</button>
+    </form>
+    <p id="mostra"></p>
+    <script>
+        // Inicia uma função
+        function myFunction() {
+            var texto = document.querySelector('input[name="texto"]:checked').value;
+            document.getElementById("mostra").innerHTML = texto;
+        }
+    </script>
+</body>
+
+</html>

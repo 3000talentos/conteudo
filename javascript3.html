@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        //digite nome
+        var Nome = prompt("Digite seu nome") 
+        //digite peso
+        var Peso = prompt("Digite seu peso")
+        //substitui , por .
+        var Peso = Peso.replace(",", ".")  
+        //digita altura
+        var Altura = prompt("Digite sua altura")
+        //substitui , por .
+        var Altura = Altura.replace(",", ".") 
+        //Calcula o IMC
+        var imc = Peso / (Altura * Altura)
+        //Transforma em duas casas decimais
+        var imc = imc.toFixed(2)
+         //mostra                
+        var mostra = ("Olá, " + Nome + " seu IMC é " + imc.replace(".", ",") )               
+    </script>
+</head>
+<body>
+<h2 id="mostrar"></h2>
+<script>
+document.getElementById("mostrar").innerHTML = mostra
+</script>
+</body>
+</html>

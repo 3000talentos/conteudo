@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        var Nome = prompt("Digite seu nome")        
+        var Peso = prompt("Digite seu peso")
+        var Peso = Peso.replace(",",".")
+        var Altura = prompt("Digite sua altura")
+        var Altura = Altura.replace(",",".")
+        var imc = Peso / (Altura * Altura)
+        var imc = imc.toFixed(2)                       
+        var mostra = ("Olá, " + Nome + " seu IMC é " + imc.replace(".",","))      
+    </script>
+</head>
+<body>
+<h2 id="mostrar" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"></h2>
+<script>
+document.getElementById("mostrar").innerHTML = mostra
+</script>
+</body>
+</html>
